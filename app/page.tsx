@@ -39,9 +39,9 @@ export default function Home() {
               Culinary
             </span>
             <p className="pt-16 text-[#54331C]">అనుపాకం కలినరీ</p>
-            <span className="text-2xl pb-6 pt-4">
+            <div className="text-2xl pb-6 pt-4">
               Exquisite Andhra Chicken and Prawn Pickle Masterpieces
-            </span>
+            </div>
             <button className="bg-black text-white rounded-full px-2 py-2 w-36 mt-8">
               Order Now
             </button>
