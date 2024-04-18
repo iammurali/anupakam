@@ -1,113 +1,185 @@
+import { titleFont } from "@/utils/fonts";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+    <main className="flex min-h-screen flex-col px-16 pt-8">
+      <nav className="flex items-center justify-between">
+        <div className="flex">
+          <Image
+            src="/logo.png"
+            alt="logo"
+            width={80}
+            height={100}
+            className="mr-4"
+          />
+        </div>
+        <div className="flex justify-center gap-4">
+          <a href="/" className="px-4">
+            Home
+          </a>
+          <a href="/pickles" className="px-4">
+            Pickles
+          </a>
+          <a href="/contactus" className="px-4">
+            Contact Us
           </a>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+        <div className="flex">
+          <button className="bg-black text-white rounded-full px-2 py-2 w-36">
+            Order Now
+          </button>
+        </div>
+      </nav>
+      <section className="flex pt-8 pb-24 w-full">
+        <div className="w-1/2">
+          <div className="pt-16">
+            <span className={`text-[#54331C] text-8xl ${titleFont.className}`}>
+              Anupakam <br />
+              Culinary
             </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+            <p className="pt-16 text-[#54331C]">అనుపాకం కలినరీ</p>
+            <span className="text-2xl pb-6 pt-4">
+              Exquisite Andhra Chicken and Prawn Pickle Masterpieces
             </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+            <button className="bg-black text-white rounded-full px-2 py-2 w-36 mt-8">
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div className="w-1/2 flex justify-end">
+          <div className="hidden lg:block">
+          <span className="absolute right-96 top-20 transform -rotate-[25deg] text-[250px] font-bold text-[#54331C]">
+                    &#8220;
+                  </span>
+            <div className="">
+              
+              <Image
+                src="/hero.png"
+                alt="hero"
+                width={500}
+                height={300}
+                className="absolute right-0"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="flex py-28">
+        <div className="w-1/2">
+          <div className="pt-16">
+            <span className="text-5xl text-[#54331C]">
+              Freshly Cut Chicken Pickle,
+              <br /> Dispatched Within 2 Days
             </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+            <br />
+            <br />
+            <div className="text-base pb-6 pt-4 md:w-3/4 lg:w-3/4 text-[#54331C]">
+              <b>Our recipes are steeped in tradition</b>, handed down through{" "}
+              generations, ensuring that every jar is filled with the authentic
+              flavors of Andhra cuisine. Made to order using only the finest
+              ingredients, our pickles offer a taste experience like no other.
+            </div>
+            <div className="text-base pb-6 pt-4 md:w-3/4 lg:w-3/4 text-[#54331C]">
+              <b>
+                From the rich and spicy notes of our chicken pickle to the
+                tantalizing tang of our prawn pickle
+              </b>
+              , each bite is a symphony of flavors that will transport you to
+              the heart of Andhra Pradesh. Discover the unmatched taste of
+              Anupakam and elevate your culinary journey today
+            </div>
+            <button className="bg-black text-white rounded-full px-2 py-2 w-36 mt-8">
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div className="w-1/2 flex justify-end">
+          <Image
+            src="/secondsection.png"
+            alt="second"
+            width={500}
+            height={500}
+            className="relative"
+          />
+        </div>
+      </section>
+      <section className="text-gray-600 body-font">
+        <h1 className="text-3xl font-bold text-[#54331C]">Shop</h1>
+        <div className="container px-5 py-14 mx-auto">
+          <div className="flex flex-wrap -m-4">
+            <div className="p-4 px-10 md:w-1/3">
+              <div className="h-3/4 rounded-lg overflow-hidden">
+                <Image
+                  width={200}
+                  height={200}
+                  className="lg:h-full md:h-full w-full object-cover object-center"
+                  src="/pickleimage.png"
+                  alt="blog"
+                />
+              </div>
+              <div className="p-6">
+                <h1 className="title-font text-lg font-medium text-gray-900 mb-2">
+                  Premium Chicken Pickle (300 gms)
+                </h1>
+                <div className="mb-2 text-gray-900">
+                  <span className="line-through "> Rs. 599</span>{" "}
+                  <span>Rs. 499</span>
+                </div>
+                <button className="bg-black text-white rounded-full px-2 py-2 w-full">
+                  Order Now
+                </button>
+              </div>
+            </div>
+            <div className="p-4 px-4 md:w-1/3">
+              <div className="h-3/4 rounded-lg overflow-hidden">
+                <Image
+                  width={200}
+                  height={200}
+                  className="lg:h-full md:h-full w-full object-cover object-center"
+                  src="/pickleimage.png"
+                  alt="blog"
+                />
+              </div>
+              <div className="p-6">
+                <h1 className="title-font text-lg font-medium text-gray-900 mb-2">
+                  Premium Chicken Pickle (1 kg)
+                </h1>
+                <div className="mb-2 text-gray-900">
+                  <span className="line-through"> Rs. 1800</span>{" "}
+                  <span>Rs. 1499</span>
+                </div>
+                <button className="bg-black text-white rounded-full px-2 py-2 w-full">
+                  Order Now
+                </button>
+              </div>
+            </div>
+            <div className="p-4 px-4 md:w-1/3">
+              <div className="h-3/4 rounded-lg overflow-hidden">
+                <Image
+                  width={200}
+                  height={200}
+                  className="lg:h-full md:h-full w-full object-cover object-center"
+                  src="/pickleimage.png"
+                  alt="blog"
+                />
+              </div>
+              <div className="p-6">
+                <h1 className="title-font text-lg font-medium text-gray-900 mb-2">
+                  Premium Chicken Pickle (500 gms)
+                </h1>
+                <div className="mb-2 text-gray-900">
+                  <span className="line-through"> Rs. 949</span>{" "}
+                  <span>Rs. 799</span>
+                </div>
+                <button className="bg-black text-white rounded-full px-2 py-2 w-full">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
