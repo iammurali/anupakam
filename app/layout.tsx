@@ -13,7 +13,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <footer>
+          <div className="text-center text-sm h-20 bg-[#54331C] flex items-center justify-center text-white">
+            Whatsapp +91 8667473511 to order Now
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }
