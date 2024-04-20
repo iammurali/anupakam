@@ -28,11 +28,10 @@ export default function Home() {
           </div>
         </div>
         <div className="hidden lg:flex">
-        <a href="https://wa.me/918667473511?text=Hello%2C%20I%20want%20to%20order%20from%20Anupakam">
-
-          <button className="bg-black text-white rounded-full px-2 py-2 w-36">
-            Order Now
-          </button>
+          <a href="https://wa.me/918667473511?text=Hello%2C%20I%20want%20to%20order%20from%20Anupakam">
+            <button className="bg-black text-white rounded-full px-2 py-2 w-36">
+              Order Now
+            </button>
           </a>
         </div>
       </nav>
@@ -52,9 +51,11 @@ export default function Home() {
               <div className="text-base lg:text-2xl pb-6 pt-4 text-center lg:text-left">
                 Exquisite Andhra Chicken and Prawn Pickle Masterpieces
               </div>
-              <button className="bg-black text-white rounded-full px-2 py-2 w-36 mt-8 lg:block hidden">
-                Order Now
-              </button>
+              <a href="https://wa.me/918667473511?text=Hello%2C%20I%20want%20to%20order%20from%20Anupakam">
+                <button className="bg-black text-white rounded-full px-2 py-2 w-36 mt-8 lg:block hidden">
+                  Order Now
+                </button>
+              </a>
             </div>
           </div>
           <div className="lg:w-1/2 lg:flex justify-end">
@@ -156,9 +157,9 @@ export default function Home() {
                     <span>{item.price}</span>
                   </div>
                   <a href="https://wa.me/918667473511?text=Hello%2C%20I%20want%20to%20order%20from%20Anupakam">
-                  <button className="bg-black text-white rounded-full px-2 py-2 w-full">
-                    Order Now
-                  </button>
+                    <button className="bg-black text-white rounded-full px-2 py-2 w-full">
+                      Order Now
+                    </button>
                   </a>
                 </div>
               </div>
@@ -193,10 +194,9 @@ export default function Home() {
                 Anupakam and elevate your culinary journey today
               </div>
               <a href="https://wa.me/918667473511?text=Hello%2C%20I%20want%20to%20order%20from%20Anupakam">
-
-              <button className="hidden lg:block bg-black text-white rounded-full px-2 py-2 w-36 mt-8">
-                Order Now
-              </button>
+                <button className="hidden lg:block bg-black text-white rounded-full px-2 py-2 w-36 mt-8">
+                  Order Now
+                </button>
               </a>
             </div>
           </div>
