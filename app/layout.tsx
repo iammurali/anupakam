@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: "Anupakam",
@@ -21,6 +22,7 @@ export default function RootLayout({
           </div>
         </footer>
       </body>
+      <GoogleAnalytics gaId="G-XTBRV6T7Y1" />
     </html>
   );
 }
