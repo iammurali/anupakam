@@ -69,7 +69,7 @@ export default function Home() {
               />
             </div>
             <div className="lg:hidden">
-              <a href="https://wa.me/918667473511?text=Hello%2C%20I%20want%20to%20order%20from%20Anupakam">
+              <a href="https://chat.whatsapp.com/DmlcK0M510DHw7AxsYtuTL">
                 <button className="bg-black text-white rounded-full px-2 py-2 w-full mt-8 flex flex-row justify-center items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ export default function Home() {
                       </g>
                     </g>
                   </svg>
-                  Order Now on Whatsapp
+                  Join us on Whatsapp
                 </button>
               </a>
             </div>
